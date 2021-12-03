@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
 app.get('/user', function (req, res) {
     res.send({
-        status: false,
+        status: true,
         code: 200,
         data: Object.values(UserRepository.findAll())
     });
